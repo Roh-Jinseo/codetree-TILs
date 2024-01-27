@@ -5,7 +5,7 @@ if len(lst) == 0 :
     print()
 
 #test n:1 m:1
-elif sum(lst) == 2:
+elif lst[0] == 1 & lst[1]==1 :
     print(1)
 
 #test n:1, m:x
