@@ -4,9 +4,19 @@ lst = list(map(int, input().split()))
 if len(lst) == 0 :
     print()
 
+#test n:1 m:1
 elif sum(lst) == 2:
     print(1)
 
+#test n:1, m:x
+elif lst[0] == 1 :
+    for i in range(1,lst[1] + 1):
+        print(i, end=" ")
+    
+#test n:x, m:1
+elif lst[1] == 1:
+    for i in range(1,lst[0]+1):
+        print(i)
 else:
     n, m = lst    
     a = [
