@@ -4,8 +4,8 @@ lst = list(map(int, input().split()))
 if len(lst) == 0 :
     print()
 
-elif len(lst) == 1:
-    print(lst[0])
+elif sum(lst) == 2:
+    print(1)
 
 else:
     n, m = lst    
