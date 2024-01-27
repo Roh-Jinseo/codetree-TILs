@@ -10,7 +10,7 @@ for row in range(n):
         num += 1
 
 #출력
-for ar in ar :
+for ar in arr :
     for i in ar :
         print(i, end = " ")
     print()
