@@ -51,8 +51,8 @@ else:
 
         
 
-#result
-for row in a:
-    for i in row:
-        print(i, end=" ")
-    print()
+    #result
+    for row in a:
+        for i in row:
+            print(i, end=" ")
+        print()
