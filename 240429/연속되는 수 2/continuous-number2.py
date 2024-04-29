@@ -1,6 +1,6 @@
 N = int(input())
 i = int(input())
-maxi = 0
+maxi = 1
 cnt = 1
 for _ in range(N-1):
     j = int(input())
