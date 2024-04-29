@@ -9,4 +9,5 @@ for _ in range(N-1):
         maxi = max(cnt, maxi)
         cnt = 1
         i = j
+maxi = max(cnt, maxi)
 print(maxi)
