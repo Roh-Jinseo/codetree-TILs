@@ -6,9 +6,10 @@ def dfs(v):
     for k in range(2):
         nx = x + dx[k]
         ny = y + dy[k] 
-        if 0<=nx<N and 0<=ny<M and not visited[x][y]:
+        if 0<=nx<N and 0<=ny<M and not visited[x][y] and arr[x][y]:
             visited[nx][ny] = 1
             if nx == N-1 and ny == M -1 : return 1
+            
     return 0
 
 N, M = map(int,input().split())
