@@ -52,4 +52,4 @@ for k in range(1, max_height+1):
     #     print(v)
     safe.append((len(ans),k))
 safe.sort(key=lambda x: (-x[0],x[1]))
-print(*safe[0])
+print(safe[0][1], safe[0][0])
