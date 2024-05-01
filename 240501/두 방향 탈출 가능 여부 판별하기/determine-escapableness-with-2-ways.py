@@ -8,6 +8,7 @@ def dfs(v):
         ny = y + dy[k] 
         if 0<=nx<N and 0<=ny<M and not visited[x][y] and arr[x][y]:
             visited[nx][ny] = 1
+            dfs((nx,ny))
             if nx == N-1 and ny == M -1 : return 1
             
     return 0
