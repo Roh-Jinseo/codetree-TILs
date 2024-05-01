@@ -1,10 +1,23 @@
-dx=[0,1]
-dy=[1,0]
+"""
+5
+0 1 0 0 1
+0 1 0 1 1
+0 1 0 0 1
+0 1 1 1 1
+1 0 0 0 0
+
+//
+2
+1
+11
+"""
+dx=[0,1,0,-1]
+dy=[1,0,-1,0]
 
 def dfs(v):
     global cnt
     x,y = v
-    for k in range(2):
+    for k in range(4):
         nx=x+dx[k]
         ny=y+dy[k]
         if 0<=nx<N and 0<=ny<N and not visited[nx][ny] and arr[nx][ny]:
@@ -20,10 +33,11 @@ ans = []
 for i in range(N):
     for j in range(N):
         cnt = 1
-        if not visited[i][j] and arr[i][j] : 
+        if not visited[i][j] and arr[i][j] :
             visited[i][j] = 1
             dfs((i,j))
             if cnt > 0 : ans.append(cnt)
+# print(visited)
 print(len(ans))
 ans.sort()
 for a in ans:
