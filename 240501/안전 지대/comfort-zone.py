@@ -8,6 +8,10 @@
 //
 4 4
 """
+import sys
+
+sys.setrecursionlimit(10**5)
+
 dx=[0,1,0,-1]
 dy=[1,0,-1,0]
 
