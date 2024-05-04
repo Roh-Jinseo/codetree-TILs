@@ -4,7 +4,7 @@ arr = [list(map(int, input().split())) for _ in range(N)]
 maxi = 0
 #block 2*2
 for i in range(N-2+1):
-    for j in range(N-2+1):
+    for j in range(M-2+1):
         s1 = arr[i][j+1] + arr[i+1][j]  +arr[i+1][j+1]
         s2 = arr[i][j] + arr[i+1][j]  +arr[i+1][j+1]
         s3 = arr[i][j] + arr[i][j+1]  +arr[i+1][j]
